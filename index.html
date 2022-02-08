@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        font-size: 30px;
+      }
+      .container {
+        background-color: rgb(93, 134, 134);
+        padding: 20px 20px;
+        margin: 20px 20px;
+        text-align: center;
+      }
+      button {
+        padding: 1rem;
+      }
+    </style>
+    <title>Form</title>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" onsubmit="sendEmail(); reset(); return false;">
+        <h3>Get in touch</h3>
+        <br />
+        <hr />
+        <input type="text" id="name" placeholder="Your Name" required />
+        <br />
+        <hr />
+        <input type="email" id="email" placeholder="Email Id" required />
+        <br />
+        <hr />
+        <input type="text" id="phone" placeholder="Phone no" required />
+        <br />
+        <hr />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="5"
+          placeholder="Message"
+        ></textarea>
+        <br />
+        <hr />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>
